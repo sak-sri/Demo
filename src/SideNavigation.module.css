@@ -1,0 +1,27 @@
+.Container{
+    width:10vw;
+    background-color:#808080;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    padding: 0px;
+    position: relative;
+    
+}
+.ContainerFirstChild{
+    height: 50%;
+}
+.ContainerTab:hover{
+color: green;
+cursor: pointer;
+}
+
+.Content{
+    width:90vw;
+}
+.h1{
+    text-align: left;
+    width: 100vw;
+    font-size: 30px;
+    font-weight: bold;
+}

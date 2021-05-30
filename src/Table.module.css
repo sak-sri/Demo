@@ -1,0 +1,40 @@
+.container{
+    width: 100%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.header{
+    display: flex;
+    text-align: left;
+    font-weight: bold;
+}
+.headerItem1{
+    width: 30%;
+}
+.headerItem2{
+    width: 70%;
+}
+.orders{
+    display: flex;
+    color: white;
+    background-color: gray;
+    margin-top: 2%;
+}
+.h1,.h2,.h3{
+    width: 30%;
+    height: 5vh;
+}
+.h2{
+border-left: 1px solid white;
+border-right: 1px solid white;
+}
+.h1,.h2,.h3:hover{
+    cursor: pointer;
+}
+.rowheader{
+    display: flex;
+    color: white;
+    background-color: black;
+    width: 60%;
+    margin-top: 0.5%;
+}

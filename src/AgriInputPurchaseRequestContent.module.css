@@ -1,0 +1,38 @@
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    height: 10%;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: gray;
+}
+.navbarItems{
+    width:24.8%;
+    background-color:gray;
+    margin: auto;
+    height: 100%;
+}
+.navBarItemsDetails{
+    width: 100%;
+    display:flex;
+    background-color: black;
+    height: 10%;
+    margin-top: 10px;
+}
+.navbarItems:hover{
+    background-color: black;
+    cursor: pointer;
+}
+.text{
+    position: relative;
+    top: 60%;
+    left: 30%;
+    font-size: large;
+    color: white;
+}
+.navbarItemsWrapper{
+    width: 50%;
+    display:flex;
+    
+}
