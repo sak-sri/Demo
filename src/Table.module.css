@@ -34,7 +34,6 @@ border-right: 1px solid white;
 .rowheader{
     display: flex;
     color: white;
-    background-color: black;
     width: 60%;
     margin-top: 0.5%;
 }
