@@ -48,6 +48,7 @@ const AgriInputPurchaseRequestContent=(props)=>{
                 <Executed toggleVisibility={toggleVisibility}></Executed>
                 <Completed toggleVisibility={toggleVisibility}></Completed>
             </div>
+            
             </div>
             {element}
             {content}
