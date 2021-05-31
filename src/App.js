@@ -6,12 +6,16 @@ import SupplierMasterMaintenanceContent from './Components/SupplierMasterMainten
 import TaxMasterMaintenanceContent from './Components/TaxMasterMaintenanceContent'
 import AgriInputPurchaseRequestContent from './Components/AgriInputPurchaseRequestContent'
 import { useState } from 'react';
+
 const App=()=>{
   const [item,setItem]=useState(parseInt(0));
+
+  let SideNavigationTab= <AgriInputPurchaseRequestContent name={"Agri-Input Purchase Request"}/>;
+
   const changeItem=(id)=>{
     setItem(parseInt(id));
   }
-  let SideNavigationTab= <AgriInputPurchaseRequestContent name={"Agri-Input Purchase Request"}/>;
+  
   if(item===parseInt(0)){
     SideNavigationTab=<AgriInputPurchaseRequestContent name={"Agri-Input Purchase Request"}/>
   }else if(item===parseInt(1)){
