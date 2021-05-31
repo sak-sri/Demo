@@ -1,4 +1,5 @@
-import classes from './Modal.module.css'
+import classes from '../css/Modal.module.css'
+
 const Modal=(props)=>{
     return(
         <div className={classes.overlay} style={{display:props.disp}}>
@@ -13,4 +14,5 @@ const Modal=(props)=>{
         </div>
     )
 };
+
 export default Modal;

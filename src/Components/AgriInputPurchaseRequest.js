@@ -1,4 +1,5 @@
-import classes from './SideNavigation.module.css'
+import classes from '../css/SideNavigation.module.css'
+
 const AgriInputPurchaseRequest=(props)=>{
     return(
         <div className={classes.ContainerTab} onClick={()=>props.changeItem(0)}>
@@ -6,4 +7,5 @@ const AgriInputPurchaseRequest=(props)=>{
         </div>
     )
 };
+
 export default AgriInputPurchaseRequest

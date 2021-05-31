@@ -1,7 +1,8 @@
-import classes from './TableRow.module.css'
+import classes from '../css/TableRow.module.css'
 import Modal from './Modal.js'
 import { useState } from 'react';
-import Logo from './image.png'
+import Logo from '../image.png'
+
 const TableRow=(props)=>{
     const [vis,setVis]=useState('none')
     let visibility={
@@ -28,4 +29,5 @@ const TableRow=(props)=>{
         </div>
     )
 };
+
 export default TableRow;

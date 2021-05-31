@@ -1,4 +1,5 @@
-import classes from './SideNavigation.module.css'
+import classes from '../css/SideNavigation.module.css'
+
 const TaxMasterMaintenance=(props)=>{
     return (
         <div style={{height:'10vh'}} className={classes.ContainerTab} onClick={()=>{props.changeItem(4)}}>
@@ -6,4 +7,5 @@ const TaxMasterMaintenance=(props)=>{
         </div>
     )
 };
+
 export default TaxMasterMaintenance;

@@ -1,4 +1,5 @@
-import classes from './ExecutingContent.module.css'
+import classes from '../css/ExecutingContent.module.css'
+
 const ExecutingContent=(props)=>{
     return(
         <div className={classes.Container}>
@@ -8,4 +9,5 @@ const ExecutingContent=(props)=>{
         </div>
     )
 };
+
 export default ExecutingContent;

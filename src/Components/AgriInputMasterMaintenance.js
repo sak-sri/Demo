@@ -1,4 +1,5 @@
-import classes from './SideNavigation.module.css'
+import classes from '../css/SideNavigation.module.css'
+
 const AgriInputMasterMaintenance=(props)=>{
     return(
         <div className={classes.ContainerTab} onClick={()=>props.changeItem(1)}>
@@ -6,4 +7,5 @@ const AgriInputMasterMaintenance=(props)=>{
         </div>
     )
 };
+
 export default AgriInputMasterMaintenance;

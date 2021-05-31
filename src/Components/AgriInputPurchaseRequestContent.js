@@ -1,6 +1,6 @@
-import classes1 from './SideNavigation.module.css'
-import classes2 from './AgriInputPurchaseRequestContent.module.css'
-import classes3 from './ExecutingContent.module.css'
+import classes1 from '../css/SideNavigation.module.css'
+import classes2 from '../css/AgriInputPurchaseRequestContent.module.css'
+import classes3 from '../css/ExecutingContent.module.css'
 import ExecutingContent from './ExecutingContent.js'
 import PendingContent from './PendingContent.js'
 import CompletedContent from './CompletedContent.js'
@@ -11,16 +11,17 @@ import Completed from './Completed.js'
 import Executed from './Executed.js'
 import Table from './Table.js'
 import { useState } from 'react';
+
 const AgriInputPurchaseRequestContent=(props)=>{
     const [item,setItem]=useState([0,1,0,0]);
+    let content=null;
+    let element=null;
+
     const toggleVisibility=(id)=>{
         let Arr=[0,0,0,0];
         Arr[id]=1-item[id];
         setItem(Arr);
     }
-    let content=null;
-    console.log(item)
-    let element=null;
     if(item[0]===1){
         element=<div className={classes3.otherContainerItems} style={{position:'absolute',left:'52%'}}>Pending</div>
         content= <PendingContent></PendingContent>;
@@ -53,4 +54,5 @@ const AgriInputPurchaseRequestContent=(props)=>{
         </div>
     )
 };
+
 export default AgriInputPurchaseRequestContent;

@@ -1,8 +1,9 @@
-const CompletedContent=()=>{
+const ExecutedContent=()=>{
     return(
         <div style={{width:'100%',marginTop:'10%',marginLeft:'50%'}}>
-            Completed
+            Executed
         </div>
     )
 };
-export default CompletedContent;
+
+export default ExecutedContent;

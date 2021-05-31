@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import classes from './Table.module.css'
+import classes from '../css/Table.module.css'
 import TableRow from './TableRow.js'
 import {CSVLink} from 'react-csv'
 
@@ -18,18 +18,20 @@ const data=[
     ['Growing Medium','','Acme Brand Cocobusk-50kg',50],
     ['Pesticide/Fungicide','','Decis(Delthametria) 1L',4]
 ]
+
 const Table=(props)=>{
     const [visible,setVisible]=useState([0,0]);
-   
+
+    let tableHeader1=null;
+    let rows1=null;
+    let tableHeader2=null;
+    let rows2=null;
+
     const toggleVisibility=(id)=>{
         let temp=[...visible];
         temp[id]=1-temp[id];
         setVisible(temp);
     }
-    let tableHeader1=null;
-    let rows1=null;
-    let tableHeader2=null;
-    let rows2=null;
     if(visible[0]){
     tableHeader1=<div className={classes.rowheader}>
     <div style={{width:'5%',backgroundColor:'black'}}></div>
@@ -70,8 +72,9 @@ const Table=(props)=>{
                 <div className={classes.h3}><CSVLink data={data}>RFQList_09042020_1112(click to download)</CSVLink></div>
             </div>
             {tableHeader2}
-            {rows2}
+            {rows2} 
         </div>
     )
 };
+
 export default Table;

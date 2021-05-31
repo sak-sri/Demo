@@ -1,10 +1,10 @@
 import classes from './App.module.css';
-import SideNavigation from './SideNavigation.js'
-import AgriInputMasterMaintenanceContent from './AgriInputMasterMaintenanceContent'
-import AgriPurchaseManagementContent from './AgriPurchaseManagementContent'
-import SupplierMasterMaintenanceContent from './SupplierMasterMaintenanceContent'
-import TaxMasterMaintenanceContent from './TaxMasterMaintenanceContent'
-import AgriInputPurchaseRequestContent from './AgriInputPurchaseRequestContent'
+import SideNavigation from './Components/SideNavigation.js'
+import AgriInputMasterMaintenanceContent from './Components/AgriInputMasterMaintenanceContent'
+import AgriPurchaseManagementContent from './Components/AgriPurchaseManagementContent'
+import SupplierMasterMaintenanceContent from './Components/SupplierMasterMaintenanceContent'
+import TaxMasterMaintenanceContent from './Components/TaxMasterMaintenanceContent'
+import AgriInputPurchaseRequestContent from './Components/AgriInputPurchaseRequestContent'
 import { useState } from 'react';
 const App=()=>{
   const [item,setItem]=useState(parseInt(0));

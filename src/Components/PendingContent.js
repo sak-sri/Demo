@@ -5,4 +5,5 @@ const PendingContent=()=>{
         </div>
     )
 };
+
 export default PendingContent;

@@ -3,7 +3,8 @@ import AgriPurchaseManagement from './AgriPurchaseManagement'
 import AgriInputPurchaseRequest from './AgriInputPurchaseRequest'
 import SupplierMasterMaintenance from './SupplierMasterMaintenance'
 import TaxMasterMaintenance from './TaxMasterMaintenance'
-import classes from './SideNavigation.module.css'
+import classes from '../css/SideNavigation.module.css'
+
 const SideNavigation=(props)=>{
     return(
         <div className={classes.Container}>

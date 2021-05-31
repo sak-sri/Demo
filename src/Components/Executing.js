@@ -1,4 +1,5 @@
-import classes2 from './AgriInputPurchaseRequestContent.module.css'
+import classes2 from '../css/AgriInputPurchaseRequestContent.module.css'
+
 const Executing=(props)=>{
     return(           
          <div className={classes2.navbarItems} onClick={()=>props.toggleVisibility(1)}><span className={classes2.text}
@@ -6,4 +7,5 @@ const Executing=(props)=>{
          
          >Executing</span></div>)
 };
+
 export default Executing;

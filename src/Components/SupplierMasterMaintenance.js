@@ -1,4 +1,5 @@
-import classes from './SideNavigation.module.css'
+import classes from '../css/SideNavigation.module.css'
+
 const SupplierMasterMaintenace=(props)=>{
     return(
         <div className={classes.ContainerTab} onClick={()=>props.changeItem(3)}>   
@@ -6,4 +7,5 @@ const SupplierMasterMaintenace=(props)=>{
         </div>
     )
 };
+
 export default SupplierMasterMaintenace;
