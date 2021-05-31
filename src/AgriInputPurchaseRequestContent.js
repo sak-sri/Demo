@@ -2,6 +2,9 @@ import classes1 from './SideNavigation.module.css'
 import classes2 from './AgriInputPurchaseRequestContent.module.css'
 import classes3 from './ExecutingContent.module.css'
 import ExecutingContent from './ExecutingContent.js'
+import PendingContent from './PendingContent.js'
+import CompletedContent from './CompletedContent.js'
+import ExecutedContent from './ExecutedContent.js'
 import Executing from './Executing.js'
 import Pending from './Pending.js'
 import Completed from './Completed.js'
@@ -9,23 +12,28 @@ import Executed from './Executed.js'
 import Table from './Table.js'
 import { useState } from 'react';
 const AgriInputPurchaseRequestContent=(props)=>{
-    const [item,setItem]=useState([0,0,0,0]);
+    const [item,setItem]=useState([0,1,0,0]);
     const toggleVisibility=(id)=>{
         let Arr=[0,0,0,0];
         Arr[id]=1-item[id];
         setItem(Arr);
     }
+    let content=null;
     console.log(item)
     let element=null;
     if(item[0]===1){
         element=<div className={classes3.otherContainerItems} style={{position:'absolute',left:'52%'}}>Pending</div>
+        content= <PendingContent></PendingContent>;
     }else if(item[1]===1){
         element=<ExecutingContent></ExecutingContent>
+        content=<Table></Table>
     }else if(item[2]===1){
         element= <div className={classes3.otherContainerItems} style={{position:'absolute',left:'78%'}} >Executed</div>;
+        content=<ExecutedContent></ExecutedContent>;
     }
     else if(item[3]===1){
         element=<div className={classes3.otherContainerItems} style={{position:'absolute',left:'90%'}} >Completed</div>
+        content=<CompletedContent></CompletedContent>;
     }
     return(
         <div style={{width:'90vw',position:'relative'}}>
@@ -41,7 +49,7 @@ const AgriInputPurchaseRequestContent=(props)=>{
             </div>
             </div>
             {element}
-        <Table></Table>
+            {content}
         </div>
     )
 };

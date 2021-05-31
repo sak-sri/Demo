@@ -2,6 +2,7 @@ import { useState } from 'react';
 import classes from './Table.module.css'
 import TableRow from './TableRow.js'
 import {CSVLink} from 'react-csv'
+
 let Arr=[{key:1,cat:'Seeds/Seedlings',desc:'chilli sakata 651(1500 seeds)',quant:26},
 {key:2,cat:'Nutrients/Fertilizer',desc:'Acme Brand Fert A/B Set-50Kg',quant:114},
 {key:3,cat:'Pesticide/Fungicide',desc:'Valiants ME(Methyk Eugnol) 30ml',quant:40},
@@ -59,14 +60,14 @@ const Table=(props)=>{
             <div className={classes.orders}>
                 <div className={classes.h1}  onClick={()=>{toggleVisibility(0)}}>AGBUY13042020_1042</div>
                 <div className={classes.h2}>Alex Lee</div>
-                <div className={classes.h3}><CSVLink data={data}>RFQList_13042020_1042</CSVLink></div>
+                <div className={classes.h3}><CSVLink data={data}>RFQList_13042020_1042(click to download)</CSVLink></div>
             </div>
             {tableHeader1}
             {rows1}
             <div className={classes.orders}>
                 <div className={classes.h1}  onClick={()=>{toggleVisibility(1)}}>AGBUY09042020_1112</div>
                 <div className={classes.h2}>Alex Lee</div>
-                <div className={classes.h3}><CSVLink data={data}>RFQList_09042020_1112</CSVLink></div>
+                <div className={classes.h3}><CSVLink data={data}>RFQList_09042020_1112(click to download)</CSVLink></div>
             </div>
             {tableHeader2}
             {rows2}

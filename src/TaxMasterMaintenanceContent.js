@@ -1,6 +1,6 @@
 const TaxMasterMaintenanceContent=(props)=>{
     return(
-        <div style={{width:'90vw'}}>
+        <div style={{width:'90vw',fontWeight:'bold',fontSize:'50px'}}>
             {props.name}
         </div>
     )

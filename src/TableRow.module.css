@@ -5,3 +5,6 @@
     width: 60%;
     border-bottom: 1px solid white;
 }
+.viewmodal:hover{
+    cursor:pointer;
+}

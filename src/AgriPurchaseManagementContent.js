@@ -1,6 +1,6 @@
 const AgriPurchaseManagementContent=(props)=>{
     return(
-        <div style={{width:'90vw'}}>{props.name}</div>
+        <div style={{width:'90vw',fontWeight:'bold',fontSize:'50px'}}>{props.name}</div>
     )
 }
 export default AgriPurchaseManagementContent;
